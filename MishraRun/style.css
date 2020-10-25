@@ -1,0 +1,83 @@
+#game{
+    height: 300px;
+    width: 700px;
+    border: 2px solid black;
+    margin: auto;
+}
+#Instructions{
+    font-family: sans-serif;
+    position: absolute;
+
+    left: 25%;
+}
+h3{
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    left: 35rem;
+    font-family: sans-serif;
+}
+#mishra{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    /* background-color: aqua; */
+    background-image: url(mishra.png) ;
+    background-size: 100px 100px;
+    top: 200px;
+    
+}
+
+#obstacle{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top:150px;
+    /* background-image: url(NewCig.png); */
+    background-size: 50px 38px;
+    background-repeat: no-repeat;
+    left:650px;
+    /* background-color: aquamarine; */
+    animation: block 1.2s linear infinite;
+}
+
+@keyframes block{
+    0%{
+        left: 650px;
+        
+    }
+    30%{
+        left:550px;
+    }
+    50%{
+        left:325px;
+        
+    }
+    80%{
+        left:160px;
+    }
+    100%{
+        left:0px;
+    }
+}
+
+.jump{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{
+        top:200px;
+    }
+    30%{
+        top:100px;
+    }
+    50%{
+        top:0px;
+    }
+    80%{
+        top:100px;
+    }
+    100%{
+        top:200px;
+    }
+}
