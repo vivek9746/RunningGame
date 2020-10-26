@@ -9,6 +9,7 @@ setTimeout(() => {
     console.log("obs",obstacle);
     obstacle.style.display ="none";
     let ins = document.getElementById("Instructions");
+    const btn = document.getElementById("btn");
     
     count = 0;
     span.innerText = count;
@@ -17,8 +18,9 @@ setTimeout(() => {
 
 
 function startGame(){
-document.addEventListener('keyup', event =>{
-    if(event.code === 'Enter'){
+
+btn.addEventListener('click', event =>{
+   
         let ins = document.getElementById("Instructions");
         ins.style.display="none";
         if(obstacle.style.display ="none"){
@@ -71,10 +73,11 @@ function jump(){
 
 let isAlive = setInterval(function (){
     let mishraTop = parseInt(window.getComputedStyle(mishra).getPropertyValue("top"));
+    // console.log("TOP",mishraTop);
     let obstacleLeft = parseInt(window.getComputedStyle(obstacle).getPropertyValue("left"));
     // console.log(mishraTop);
 
-if(obstacleLeft<50 && obstacleLeft>0 && mishraTop > 180){
+if(obstacleLeft<50 && obstacleLeft>0 && mishraTop > 300){
     alert("Game Over!! Restart");
    restart();
 
@@ -88,13 +91,13 @@ if(obstacleLeft<50 && obstacleLeft>0 && mishraTop > 180){
 
 },10);
 
-document.addEventListener("keydown",function(event){
-    if(event.code === 'Space'){
+document.addEventListener("touchstart",function(event){
+   
     jump();
-    }
+    
 });
 
-}
+
 })
 
 }

@@ -1,20 +1,26 @@
 #game{
-    height: 300px;
-    width: 700px;
+    height: 70vh;
+    width: 85vw;
     border: 2px solid black;
     margin: auto;
 }
 #Instructions{
     font-family: sans-serif;
     position: absolute;
-
-    left: 25%;
+    margin-top: 20%;
+    left: 15%;
+}
+#btn{
+    background-color: rgb(211, 174, 125);
+    border: none;
 }
 h3{
     position: absolute;
     text-align: center;
     margin: auto;
-    left: 35rem;
+    left: 40%;
+    margin-top: 15%;
+
     font-family: sans-serif;
 }
 #mishra{
@@ -24,7 +30,7 @@ h3{
     /* background-color: aqua; */
     background-image: url(mishra.png) ;
     background-size: 100px 100px;
-    top: 200px;
+    top: 78%;
     
 }
 
@@ -32,7 +38,7 @@ h3{
     width: 50px;
     height: 50px;
     position: relative;
-    top:150px;
+    top:65%;
     /* background-image: url(NewCig.png); */
     background-size: 50px 38px;
     background-repeat: no-repeat;
@@ -66,18 +72,18 @@ h3{
 }
 @keyframes jump{
     0%{
-        top:200px;
+        top:78%;
     }
     30%{
-        top:100px;
+        top:58%;
     }
     50%{
-        top:0px;
+        top:38%;
     }
     80%{
-        top:100px;
+        top:58%;
     }
     100%{
-        top:200px;
+        top:78%;
     }
 }
