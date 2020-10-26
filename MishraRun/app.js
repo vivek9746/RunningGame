@@ -78,7 +78,7 @@ let isAlive = setInterval(function (){
     // console.log(mishraTop);
     console.log("Mishra top ",mishraTop);
     console.log("Obstacle left",obstacleLeft);
-if(obstacleLeft<50 && obstacleLeft>0 && mishraTop > 340){
+if(obstacleLeft<50 && obstacleLeft>0 && mishraTop > 350){
     alert("Game Over!! Restart");
    restart();
 

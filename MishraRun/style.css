@@ -44,7 +44,7 @@ h3{
     background-repeat: no-repeat;
     left:650px;
     /* background-color: aquamarine; */
-    animation: block 1.2s linear infinite;
+    animation: block 1.6s linear infinite;
 }
 
 @keyframes block{
